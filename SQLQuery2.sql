@@ -12,8 +12,8 @@ CREATE TABLE Client (
     clientID INT PRIMARY KEY IDENTITY(1,1),
     fname VARCHAR(50) NOT NULL,
     lname VARCHAR(50) NOT NULL,
-	userName VARCHAR(50) NOT NULL,
-	password VARCHAR(50) NOT NULL CHECK (LEN(password) > 6),
+    userName VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL CHECK (LEN(password) > 6),
     email VARCHAR(100),
     address VARCHAR(255),
     paymentInfo VARCHAR(255)
@@ -23,8 +23,8 @@ CREATE TABLE Worker (
     workerID INT PRIMARY KEY IDENTITY(1,1),
     fname VARCHAR(50) NOT NULL,
     lname VARCHAR(50) NOT NULL,
-	userName VARCHAR(50) NOT NULL,
-	password VARCHAR(50) NOT NULL CHECK (LEN(password) > 6),
+    userName VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL CHECK (LEN(password) > 6),
     rating DECIMAL(3,2),
     workerID_alt VARCHAR(50) UNIQUE
 );
